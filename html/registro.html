@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="../css/registro.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+    rel="stylesheet" />
+  <title>Formulario de registro</title>
+</head>
+
+<body>
+  <nav class="brand-nav">
+    <div class="brand-nav__content">
+      <img src="assets/UNO-LOGO.png" alt="" class="brand-nav__logo" />
+      <p class="brand-nav__logo-name">Universidad Nacional Del Oeste</p>
+    </div>
+  </nav>
+
+  <div class="form-container">
+    <form class="form">
+      <div class="form__title-container">
+        <h2 class="form__title">Formulario de Registro</h2>
+      </div>
+      <fieldset class="form__fieldset">
+        <div class="form__legend-container">
+          <legend class="form__legend">Información Personal</legend>
+        </div>
+        <div class="form__group form__group--grid">
+          <div class="form__field name">
+            <label class="form__label" for="nombre">Nombre</label>
+            <input class="form__input" type="text" id="nombre" name="nombre" />
+            <div class="error-message" id="error-nombre"></div>
+          </div>
+          <div class="form__field lastname">
+            <label class="form__label" for="apellido">Apellido</label>
+            <input class="form__input" type="text" id="apellido" name="apellido" />
+            <div class="error-message" id="error-apellido"></div>
+          </div>
+
+          <div class="form__field">
+            <label class="form__label" for="tipoDocumento">Tipo de documento</label>
+            <select name="tipoDocumento" id="tipoDocumento" class="form__select">
+              <option value="">-- Seleccionar --</option>
+              <option value="dni">DNI</option>
+              <option value="le">Libreta de enrolamiento</option>
+              <option value="lc">Libreta Civica (LC)</option>
+              <option value="pasaporte">Pasaporte</option>
+            </select>
+            <div class="error-message" id="error-tipoDocumento"></div>
+          </div>
+
+          <div class="form__field">
+            <label for="numeroDocumento" class="form__label">Número de documento</label>
+            <input type="text" class="form__input" id="numeroDocumento" name="numeroDocumento" />
+            <div class="error-message" id="error-numeroDocumento"></div>
+          </div>
+
+          <div class="form__field">
+            <label for="fecha" class="form__label">Fecha de nacimiento</label>
+            <input type="date" id="fecha" class="form__input" />
+            <div class="error-message" id="error-fecha"></div>
+          </div>
+
+          <div class="form__field">
+            <label for="telefono" class="form__label">Número de teléfono</label>
+            <input type="tel" id="telefono" name="telefono" class="form__input" placeholder="Ej: 11 2345 6789" />
+            <div class="error-message" id="error-telefono"></div>
+          </div>
+
+          <div class="form__field">
+            <label for="sexo" class="form__label">Sexo</label>
+            <select name="sexo" id="sexo" class="form__select">
+              <option value="">-- Seleccionar --</option>
+              <option value="masculino">Masculino</option>
+              <option value="femenino">Femenino</option>
+            </select>
+            <div class="error-message" id="error-sexo"></div>
+          </div>
+
+          <div class="form__field">
+            <label for="identidadGenero" class="form__label">Identidad de género</label>
+            <select name="identidadGenero" id="identidadGenero" class="form__select">
+              <option value="">-- Seleccionar --</option>
+              <option value="varon">Varón</option>
+              <option value="varonTrans">Varón Trans</option>
+              <option value="mujer">Mujer</option>
+              <option value="mujerTrans">Mujer Trans</option>
+              <option value="gay">Gay</option>
+              <option value="lesbiana">Lesbiana</option>
+              <option value="travesti">Travesti</option>
+              <option value="transexual">Transexual</option>
+              <option value="transgenero">Transgénero</option>
+              <option value="bisexual">Bisexual</option>
+              <option value="noBinarie">No binarie</option>
+              <option value="generoFluido">Género Fluido</option>
+              <option value="otro">Otro</option>
+              <option value="noResponde">Prefiero no responder</option>
+            </select>
+            <div class="error-message" id="error-identidadGenero"></div>
+          </div>
+
+          <div class="form__field">
+            <label for="situacionFamiliar" class="form__label">Situación familiar</label>
+            <select name="situacionFamiliar" id="situacionFamiliar" class="form__select">
+              <option value="">-- Seleccionar --</option>
+              <option value="soltero">Soltero</option>
+              <option value="casado">Casado</option>
+              <option value="divorciado">Divorciado</option>
+              <option value="viudo">Viudo</option>
+              <option value="separado">Separado</option>
+              <option value="union">Unión consensual</option>
+            </select>
+            <div class="error-message" id="error-situacionFamiliar"></div>
+          </div>
+
+          <div class="form__field">
+            <label for="hijos" class="form__label">Cantidad de hijos</label>
+            <select name="hijos" id="hijos" class="form__select">
+              <option value="">-- Seleccionar --</option>
+              <option value="uno">Uno</option>
+              <option value="dos">Dos</option>
+              <option value="mas">Más de dos</option>
+            </select>
+            <div class="error-message" id="error-hijos"></div>
+          </div>
+
+          <div class="form__field">
+            <label for="padre" class="form__label">Situación de padre</label>
+            <select name="padre" id="padre" class="form__select">
+              <option value="">-- Seleccionar --</option>
+              <option value="vive">Vive</option>
+              <option value="noVive">No vive</option>
+              <option value="desconoce">Desconoce</option>
+            </select>
+            <div class="error-message" id="error-padre"></div>
+          </div>
+
+          <div class="form__field">
+            <label for="madre" class="form__label">Situación de madre</label>
+            <select name="madre" id="madre" class="form__select">
+              <option value="">-- Seleccionar --</option>
+              <option value="vive">Vive</option>
+              <option value="noVive">No vive</option>
+              <option value="desconoce">Desconoce</option>
+            </select>
+            <div class="error-message" id="error-madre"></div>
+          </div>
+
+          <div class="form__field form__field-grid-item">
+            <label for="familiares" class="form__label">Cantidad de familiares a cargo</label>
+            <select name="familiares" id="familiares" class="form__select">
+              <option value="">-- Seleccionar --</option>
+              <option value="uno">Uno</option>
+              <option value="dos">Dos</option>
+              <option value="mas">Más de dos</option>
+              <option value="ninguno">Ninguno</option>
+            </select>
+            <div class="error-message" id="error-familiares"></div>
+          </div>
+        </div>
+      </fieldset>
+
+      <fieldset class="form__fieldset">
+        <legend class="form__legend">Domicilio</legend>
+
+        <div class="form__group form__group--grid">
+          <div class="form__field">
+            <label for="calle" class="form__label">Calle</label>
+            <input type="text" class="form__input" id="calle" name="calle" />
+            <div class="error-message" id="error-calle"></div>
+          </div>
+
+          <div class="form__field">
+            <label for="numero" class="form__label">Número</label>
+            <input type="text" class="form__input" id="numero" name="numero" />
+            <div class="error-message" id="error-numero"></div>
+          </div>
+
+          <div class="form__field">
+            <label for="piso" class="form__label">Piso</label>
+            <input type="text" class="form__input" id="piso" name="piso" />
+          </div>
+
+          <div class="form__field">
+            <label for="departamento" class="form__label">Departamento</label>
+            <input type="text" class="form__input" id="departamento" name="departamento" />
+          </div>
+
+          <div class="form__field">
+            <label for="localidad" class="form__label">Localidad</label>
+            <select id="localidad" name="localidad" class="form__select">
+              <option value="">-- Seleccionar --</option>
+              <option value="merlo">Merlo</option>
+              <option value="sanJusto">San Justo</option>
+              <option value="moron">Morón</option>
+              <option value="ituzaingo">Ituzaingó</option>
+              <option value="moreno">Moreno</option>
+            </select>
+            <div class="error-message" id="error-localidad"></div>
+          </div>
+
+          <div class="form__field">
+            <label for="codigoPostal" class="form__label">Codigo Postal</label>
+            <input type="text" id="codigoPostal" class="form__input" />
+            <div class="error-message" id="error-codigoPostal"></div>
+          </div>
+        </div>
+      </fieldset>
+
+      <fieldset class="form__fieldset">
+        <legend class="form__legend">Datos de acceso</legend>
+
+        <div class="form__group form__group--grid">
+          <div class="form__field">
+            <label for="usuario" class="form__label">Usuario</label>
+            <input type="text" class="form__input" id="usuario" name="usuario" />
+            <div class="error-message" id="error-usuario"></div>
+          </div>
+
+          <div class="form__field">
+            <label for="email" class="form__label">Email</label>
+            <input type="email" class="form__input" id="email" name="email" />
+            <div class="error-message" id="error-email"></div>
+          </div>
+          <div class="form__password-camp">
+          <div class="form__field">
+              <label for="contraseña" class="form__label">Contraseña</label>
+              <input type="password" id="contraseña" name="contraseña" class="form__input" />
+              <div class="tooltip">
+                La contraseña debe tener:<br />
+                - Al menos 8 caracteres<br />
+                - Una letra mayúscula<br />
+                - Una letra minúscula<br />
+                - Un número<br />
+                - Un símbolo especial
+              </div>
+            </div>
+            <div class="error-message" id="error-contraseña"></div>
+          </div>
+
+          <div class="form__field">
+            <label for="repetirContraseña" class="form__label">Repita la contraseña</label>
+            <input type="password" id="repetirContraseña" name="repetirContraseña" class="form__input" />
+            <div class="error-message" id="error-repetirContraseña"></div>
+          </div>
+        </div>
+      </fieldset>
+      <div class="form__button">
+        <a href="inicio_usuario.html" class="form__button-link">
+          <button type="button">Enviar</button>
+        </a>        
+      </div>
+    </form>
+  </div>
+  <script src="js/registro.js"></script>
+</body>
+
+</html>

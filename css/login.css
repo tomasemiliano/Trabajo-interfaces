@@ -1,0 +1,92 @@
+/* RESET */
+* {
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #f2f4f8;
+    min-height: 100vh;
+}
+
+/* HEADER */
+header {
+    background-color: #259fac;
+    color: white;
+    padding: 20px;
+    border-radius: 0 0 20px 20px;
+}
+
+.container-header {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+header img {
+    height: 40px;
+}
+
+/* MAIN */
+.login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 20px;
+}
+
+.login-card {
+    background-color: white;
+    border-radius: 20px;
+    padding: 30px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+}
+
+.login-card h2 {
+    margin-bottom: 20px;
+    text-align: center;
+    color: #333;
+}
+
+.login-card form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.login-card label {
+    font-weight: bold;
+    color: #333;
+}
+
+.login-card input {
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+}
+
+.login-card button {
+    background-color: #259fac;
+    color: white;
+    border: none;
+    padding: 12px;
+    border-radius: 12px;
+    font-weight: bold;
+    cursor: not-allowed;
+}
+
+.registro-link {
+    margin-top: 10px;
+    font-size: 14px;
+    text-align: center;
+}
+
+.registro-link a {
+    color: #259fac;
+    text-decoration: none;
+    font-weight: bold;
+}

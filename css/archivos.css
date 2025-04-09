@@ -1,0 +1,203 @@
+/* LAYOUT */
+.container {
+    display: flex;
+    gap: 20px;
+    padding: 20px;
+    flex-wrap: wrap;
+}
+
+/* Sidebar */
+.sidebar {
+    background-color: #333;
+    color: white;
+    width: 200px;
+    padding: 20px;
+    height: 100vh;
+    box-sizing: border-box;
+    flex-shrink: 0;
+}
+
+.sidebar h2 {
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+
+.sidebar ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.sidebar ul li {
+    margin: 15px 0;
+}
+
+.sidebar ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    display: block;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+/* Main */
+.main {
+    flex: 1;
+    background: white;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    height: calc(100vh - 80px);
+    overflow-y: auto;
+}
+
+/* Tablas */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 30px;
+}
+
+tr:hover {
+    background-color: #f9f9f9;
+}
+
+.lineasTabla {
+    padding: 10px 25px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+    vertical-align: middle;
+}
+
+thead th.lineasTabla {
+    background-color: #f2f2f2;
+    font-size: 12px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #6b7280;
+    letter-spacing: 0.05em;
+}
+
+/* Dropdown */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropbtn {
+    background-color: #259fac;
+    color: white;
+    padding: 8px 12px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.dropbtn:hover {
+    background-color: #1e8792;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: white;
+    min-width: 200px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    z-index: 1;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 10px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #f1f1f1;
+}
+
+/* Títulos */
+.main h1, .main h2 {
+    text-align: center;
+}
+
+/* Materias */
+.materia-en-curso {
+    outline: 2px solid green;
+    border-radius: 25px;
+    padding: 0px 2px;
+    display: inline-block;
+    line-height: 1;
+    background-color: white;
+    box-sizing: border-box;
+    vertical-align: middle;
+}
+
+.materia-completada {
+    text-decoration: line-through;
+    color: red;
+}
+
+/* Inputs  */
+.dias-checkboxes {
+    margin-top: 5px;
+    padding: 5px;
+    border: 1px solid #ccc;
+    background-color: #f9f9f9;
+    border-radius: 4px;
+}
+
+.dias {
+    cursor: pointer;
+    font-weight: bold;
+    color: #007bff;
+}
+
+.input-profesor {
+    width: 100%;
+    padding: 6px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+
+
+/* Celulares */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+
+    .sidebar {
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        padding: 10px;
+    }
+
+    .sidebar ul {
+        display: flex;
+        gap: 15px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .sidebar ul li {
+        margin: 0;
+    }
+
+    .sidebar h2 {
+        display: none;
+    }
+}
+

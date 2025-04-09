@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Gestor de carrera Lic. Informática</title>
+  <link rel="stylesheet" href="../css/Inicio_usuario.css">
+
+</head>
+<body>
+  <header>
+    <div class="container-header">
+      <img src="/assets/UNO-LOGO-BLANCO.png" alt="Logo" />
+      <h1>Gestor de carrera Lic. Informática</h1>
+    </div>
+  </header>
+
+  <div class="container">
+    <nav class="sidebar">
+      <h2>Menú</h2>
+      <ul>
+        <li><a href="#" class="menu-link" data-target="perfil_materias.html">Perfil</a></li>
+        <li><a href="#" class="menu-link" data-target="archivos.html">Mis Archivos</a></li>
+        <li><a href="#" class="menu-link" data-target="usuario_examenes.html">Exámenes</a></li>
+        <li><a href="#" class="menu-link" data-target="configuracion.html">Configuración</a></li>
+      </ul>      
+    </nav>
+
+    <main class="main">
+      <div class="card" id="pendientes-container">
+        <h2>Exámenes Pendientes</h2>
+        <ul id="lista-examenes"></ul>
+      </div>
+
+      <div class="card">
+        <h2>Horarios</h2>
+        <div class="subjects">
+          <div class="subject">
+            <span>Programación</span>
+            <span>Martes 14:00 - 16:00</span>
+          </div>
+          <div class="subject">
+            <span>Álgebra</span>
+            <span>Jueves 10:00 - 12:00</span>
+          </div>
+        </div>
+      </div>
+    </main>
+  </div>
+</body>
+<script src="../js/navegacion.js"></script>
+<script src="../js/Inicio_usuario.js"></script>
+</html>
+
